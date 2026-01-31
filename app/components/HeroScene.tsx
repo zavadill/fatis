@@ -29,7 +29,7 @@ const HeroScene = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-start">
                 <button className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-full transition-all transform hover:scale-105 shadow-lg shadow-blue-500/20">
-                  Objednat se
+                  Rezervace
                 </button>
                 <button className="px-8 py-4 border border-neutral-700 hover:border-white text-white font-medium rounded-full transition-colors backdrop-blur-sm">
                   Zobrazit ceník
