@@ -32,7 +32,8 @@ const galleryItems = [
 
 const GalleryPreview = () => {
   return (
-    <section className="relative bg-neutral-950 py-24 lg:py-32 overflow-hidden text-neutral-100 border-t border-neutral-900">
+    <div className="bg-neutral-950 border-t border-neutral-900">
+    <section className="relative max-w-7xl mx-auto  py-24 lg:py-32 overflow-hidden text-neutral-100 ">
       
       {/* DEKORATIVNÍ POZADÍ (Glow uprostřed) */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full lg:w-1/2 h-1/2 bg-blue-600/5 blur-[100px] rounded-full pointer-events-none" />
@@ -123,6 +124,7 @@ const GalleryPreview = () => {
 
       </div>
     </section>
+    </div>
   )
 }
 

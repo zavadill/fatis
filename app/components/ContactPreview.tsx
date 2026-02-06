@@ -10,7 +10,8 @@ const openingHours = [
 
 const ContactPreview = () => {
   return (
-    <section className="relative bg-neutral-950 py-24 lg:py-32 overflow-hidden text-neutral-100 border-t border-neutral-900">
+    <div className="bg-neutral-950 border-t border-neutral-900">
+    <section className="relative max-w-7xl mx-auto  py-24 lg:py-32 overflow-hidden text-neutral-100 ">
       
       {/* DEKORATIVNÍ POZADÍ (Glow vpravo dole) */}
       <div className="absolute bottom-0 right-0 w-full lg:w-1/2 h-full bg-blue-900/10 blur-[150px] rounded-full pointer-events-none" />
@@ -150,6 +151,7 @@ const ContactPreview = () => {
         </div>
       </div>
     </section>
+    </div>
   )
 }
 

@@ -32,12 +32,12 @@ const services = [
 
 const ServicesPreview = () => {
   return (
-    <section className="relative bg-neutral-950 py-24 lg:py-32 overflow-hidden text-neutral-100">
+    <section className="relative py-24 lg:py-32 overflow-hidden text-neutral-100">
       
-      {/* DEKORATIVNÍ POZADÍ (Glow effect - tentokrát vlevo pro vyvážení) */}
+      {/* DEKORATIVNÍ POZADÍ */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-full lg:w-1/3 h-full bg-blue-900/10 blur-[120px] rounded-full pointer-events-none" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 max-w-7xl relative z-10">
         
         {/* HLAVIČKA SEKCE */}
         <div className="flex flex-col items-center text-center mb-16 lg:mb-24">
@@ -62,16 +62,18 @@ const ServicesPreview = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="group relative bg-neutral-900/40 backdrop-blur-sm border border-neutral-800 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 hover:bg-neutral-900/80 hover:border-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/10"
+              className="group relative bg-neutral-900/40 backdrop-blur-sm border border-neutral-800 rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 hover:bg-neutral-900/80 hover:border-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col h-full"
             >
               {/* Jemný gradient na vrchu karty při hoveru */}
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               
-              <div className="flex justify-between items-start mb-4">
-                <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+              {/* HLAVIČKA KARTY (Nadpis + Cena) */}
+              <div className="flex justify-between items-start gap-4 mb-4">
+                <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-blue-400 transition-colors leading-tight">
                   {service.title}
                 </h3>
-                <span className="text-blue-500 font-bold text-lg bg-blue-500/10 px-3 py-1 rounded-full">
+                {/* OPRAVA: whitespace-nowrap (nezalamovat) a shrink-0 (nezmenšovat) */}
+                <span className="text-blue-500 font-bold text-lg bg-blue-500/10 px-3 py-1 rounded-full whitespace-nowrap shrink-0">
                   {service.price}
                 </span>
               </div>
@@ -83,17 +85,17 @@ const ServicesPreview = () => {
                 {service.duration}
               </div>
               
-              <p className="text-neutral-400 text-sm leading-relaxed mb-6 group-hover:text-neutral-300 transition-colors">
+              <p className="text-neutral-400 text-sm leading-relaxed mb-6 group-hover:text-neutral-300 transition-colors flex-grow">
                 {service.description}
               </p>
 
               {/* Dekorativní tečka */}
-              <div className="w-10 h-[2px] bg-neutral-800 group-hover:bg-blue-500 transition-colors duration-300" />
+              <div className="w-10 h-[2px] bg-neutral-800 group-hover:bg-blue-500 transition-colors duration-300 mt-auto" />
             </div>
           ))}
         </div>
 
-        {/* CTA TLAČÍTKO - ODKAZ NA VŠECHNY SLUŽBY */}
+        {/* CTA TLAČÍTKO */}
         <div className="flex justify-center">
             <Link href="/sluzby">
                 <button className="px-10 py-4 border border-neutral-700 hover:border-blue-500 text-neutral-300 hover:text-white rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)] bg-neutral-900/50 backdrop-blur-md flex items-center gap-3 group">
