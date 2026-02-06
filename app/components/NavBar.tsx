@@ -24,10 +24,10 @@ export function Navbar() {
     <header
       className={`
         fixed left-1/2 -translate-x-1/2 z-50 flex items-center justify-between px-6 py-4
-        transition-all duration-300 ease-in-out
+        transition-all duration-1000 ease-in-out
         ${
           isScrolled
-            ? 'top-4 w-[95%] max-w-7xl rounded-full bg-neutral-900/90 backdrop-blur-md border border-white/10 shadow-lg'
+            ? 'top-4 w-[95%] max-w-6xl rounded-full bg-neutral-900/90 backdrop-blur-md border border-white/10 shadow-lg'
             : 'top-0 w-full bg-transparent border-transparent'
         }
       `}
