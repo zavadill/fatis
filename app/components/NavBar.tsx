@@ -31,17 +31,17 @@ export function Navbar() {
   }, [isMobileMenuOpen]);
 
   return (
-    <header
+<header
       className={`
         fixed z-50 flex flex-col items-center
         transition-all duration-500 ease-in-out
-        /* LOGIKA STYLŮ: */
         ${
           isMobileMenuOpen
-            ? 'top-0 left-0 w-full h-screen bg-neutral-950 rounded-none' // Fullscreen stav
+            /* ZMĚNA ZDE: místo h-screen dáváme h-[100dvh] */
+            ? 'top-0 left-0 w-full h-[100dvh] bg-neutral-950 rounded-none touch-none' 
             : isScrolled
-              ? 'top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl rounded-full bg-neutral-900/90 backdrop-blur-md border border-white/10 shadow-lg h-auto' // Scrolled stav (pill)
-              : 'top-0 left-0 w-full bg-transparent border-transparent h-auto' // Top stav
+              ? 'top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl rounded-full bg-neutral-900/90 backdrop-blur-md border border-white/10 shadow-lg h-auto'
+              : 'top-0 left-0 w-full bg-transparent border-transparent h-auto'
         }
       `}
     >
@@ -88,7 +88,7 @@ export function Navbar() {
 
       {/* MOBILE FULLSCREEN OBSAH */}
       <div className={`
-        md:hidden flex flex-col items-center justify-center w-full h-[100dvh] absolute inset-0 bg-neutral-950
+        md:hidden flex flex-col items-center justify-center w-full h-dvh absolute inset-0 bg-neutral-950
         transition-all duration-500 ease-in-out
         ${isMobileMenuOpen ? 'opacity-100 visible pointer-events-auto' : 'opacity-0 invisible pointer-events-none'}
       `}>
