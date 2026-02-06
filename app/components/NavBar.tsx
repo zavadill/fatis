@@ -88,7 +88,7 @@ export function Navbar() {
 
       {/* MOBILE FULLSCREEN OBSAH */}
       <div className={`
-        md:hidden flex flex-col items-center justify-center w-full h-full absolute inset-0 bg-neutral-950
+        md:hidden flex flex-col items-center justify-center w-full h-[100dvh] absolute inset-0 bg-neutral-950
         transition-all duration-500 ease-in-out
         ${isMobileMenuOpen ? 'opacity-100 visible pointer-events-auto' : 'opacity-0 invisible pointer-events-none'}
       `}>
