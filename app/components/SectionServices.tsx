@@ -5,27 +5,27 @@ import Link from "next/link"
 
 const services = [
   {
-    title: "Pánský střih",
-    price: "490 Kč",
-    description: "Konzultace, mytí, precizní střih nůžkami i strojkem, začisťení kontur břitvou, styling.",
+    title: "Klasické stříhání",
+    price: "500 Kč",
+    description: "Střih, zaholení kontur, úprava obočí, opalování uší, mytí a styling.",
     duration: "45 min"
   },
   {
     title: "Úprava vousů",
-    price: "390 Kč",
-    description: "Napaření Hot Towelem, úprava tvaru, holení břitvou (krk a tváře), olej a balzám.",
+    price: "380 Kč",
+    description: "Úprava vousů, zaholení kontur vousů, styling vousů a péče.",
     duration: "30 min"
   },
   {
-    title: "Komplet Barber",
-    price: "790 Kč",
-    description: "Kombinace střihu a úpravy vousů. Kompletní servis včetně peelingu a masáže hlavy.",
+    title: "Komplet (Vlasy + Vousy)",
+    price: "830 Kč",
+    description: "Klasické stříhání a úprava vousů. Zaholení kontur, úprava obočí a opalování uší.",
     duration: "75 min"
   },
   {
-    title: "Junior střih",
-    price: "390 Kč",
-    description: "Stylový střih pro mladé gentlemany do 10 let. Stejná péče jako pro dospělé.",
+    title: "Střih strojkem",
+    price: "400 Kč",
+    description: "Střih strojkem celé hlavy bez použití nůžek, úprava obočí a kontur.",
     duration: "30 min"
   }
 ]

@@ -9,80 +9,146 @@ export const metadata: Metadata = {
 // DATA: Ceník služeb
 const pricingData = [
   {
-    category: "Pánské střihy",
-    description: "Precizní práce s nůžkami a strojkem. Včetně mytí a stylingu.",
+    category: "Vlasy",
+    description: "Profesionální střihy pro každou délku a styl.",
     items: [
       {
-        title: "Klasický střih",
-        price: "490 Kč",
+        title: "Klasické stříhání",
+        price: "500 Kč",
         time: "45 min",
-        detail: "Konzultace, mytí, střih, začištění kontur, styling, kolínská."
+        detail: "Střih, zaholení kontur, úprava obočí, opalování uší, mytí a styling."
       },
       {
-        title: "Skin Fade",
-        price: "550 Kč",
-        time: "50 min",
-        detail: "Náročný střih do ztracena (na kůži). Včetně mytí a stylingu."
-      },
-      {
-        title: "Střih pouze strojkem",
-        price: "350 Kč",
+        title: "Střih strojkem",
+        price: "400 Kč",
         time: "30 min",
-        detail: "Jedna délka po celé hlavě nebo jednoduchý přechod. Bez nůžek."
+        detail: "Střih strojkem celé hlavy bez použití nůžek, úprava obočí a kontur."
       },
       {
-        title: "Junior střih (do 10 let)",
-        price: "390 Kč",
+        title: "Holení hlavy břitvou do hladka",
+        price: "580 Kč",
+        time: "45 min",
+        detail: "Základem tohoto procesu je poctivé napaření hlavy horkým ručníkem a holení břitvou."
+      },
+      {
+        title: "Dětský střih",
+        price: "400 Kč",
         time: "30 min",
-        detail: "Stylový střih pro mladé gentlemany. Trpělivý přístup."
+        detail: "Stylový střih pro mladé gentlemany do 10 let."
+      },
+      {
+        title: "Pánský klasický střih od 3mm",
+        price: "400 Kč",
+        time: "30 min",
+        detail: "Střih od 3mm, mytí vlasů, vysušení, styling a na závěr kolínská."
+      },
+      {
+        title: "Stříhání dlouhých vlasů",
+        price: "690 Kč",
+        time: "60 min",
+        detail: "Střih, zaholení kontur, úprava obočí, opalování uší a styling delších vlasů."
       }
     ]
   },
   {
-    category: "Úprava vousů",
-    description: "Tradiční rituály s horkým ručníkem a břitvou.",
+    category: "Vousy",
+    description: "Prvotřídní péče o vaše vousy.",
     items: [
       {
-        title: "Úprava vousů & Kontury",
-        price: "390 Kč",
+        title: "Úprava vousů",
+        price: "380 Kč",
         time: "30 min",
-        detail: "Zkrácení strojkem, zarovnání břitvou, olej, balzám."
-      },
-      {
-        title: "Hot Towel Shave",
-        price: "450 Kč",
-        time: "40 min",
-        detail: "Napaření horkým ručníkem, holení břitvou do hladka, péče po holení."
+        detail: "Úprava vousů, zaholení kontur vousů, styling vousů a péče."
       },
       {
         title: "Barvení vousů",
-        price: "250 Kč",
-        time: "20 min",
-        detail: "Zakrytí šedin nebo zvýraznění barvy pro plnější vzhled."
+        price: "320 Kč",
+        time: "30 min",
+        detail: "Profesionální barvení pro sjednocení tónu a plnější vzhled."
+      },
+      {
+        title: "Tradiční holení \"HOT TOWEL\"",
+        price: "500 Kč",
+        time: "45 min",
+        detail: "Napaření vousů horkým ručníkem, tradiční holení břitvou, balzám."
+      },
+      {
+        title: "Úprava vousů + barvení vousů",
+        price: "650 Kč",
+        time: "60 min",
+        detail: "Kompletní úprava tvaru, zaholení kontur a barvení."
       }
     ]
   },
   {
-    category: "Balíčky & Speciál",
-    description: "Kombinace služeb pro maximální relax a dokonalý vzhled.",
+    category: "Komplet",
+    description: "Kombinace služeb pro dokonalý výsledek za zvýhodněnou cenu.",
     items: [
       {
-        title: "Komplet (Vlasy + Vousy)",
-        price: "790 Kč",
+        title: "Klasické stříhání + úprava vousů",
+        price: "830 Kč",
         time: "75 min",
-        detail: "Střih, úprava vousů, 2x mytí, Hot Towel, opalování uší, styling."
+        detail: "Střih, zaholení kontur, úprava obočí, opalování uší a kompletní úprava vousů."
       },
       {
-        title: "Royal Experience",
-        price: "1 190 Kč",
+        title: "Klasické stříhání + tradiční holení",
+        price: "950 Kč",
         time: "90 min",
-        detail: "Komplet + Black Mask (čištění pleti), masáž hlavy, prémiový drink."
+        detail: "Střih, zaholení kontur, úprava obočí a tradiční holení břitvou s Hot Towel."
       },
       {
-        title: "Depilace voskem (nos/uši)",
-        price: "100 Kč",
-        time: "10 min",
-        detail: "Rychlé a efektivní odstranění chloupků."
+        title: "Střih strojkem + úprava vousů",
+        price: "750 Kč",
+        time: "60 min",
+        detail: "Střih strojkem bez nůžek, úprava obočí a kompletní úprava vousů."
+      },
+      {
+        title: "Střih strojkem + tradiční holení",
+        price: "810 Kč",
+        time: "75 min",
+        detail: "Střih strojkem a tradiční holení břitvou s metodou Hot Towel."
+      },
+      {
+        title: "Holení hlavy břitvou + úprava vousů",
+        price: "880 Kč",
+        time: "75 min",
+        detail: "Základem je poctivé napaření hlavy a úprava vousů."
+      },
+      {
+        title: "Holení hlavy břitvou + tradiční holení",
+        price: "1 050 Kč",
+        time: "90 min",
+        detail: "Kompletní servis břitvou pro hlavu i tvář s metodou Hot Towel."
+      },
+      {
+        title: "Klasické stříhání, úprava a žehlení vousů",
+        price: "930 Kč",
+        time: "90 min",
+        detail: "Střih, zaholení kontur, úprava obočí a narovnání vousů žehličkou."
+      },
+      {
+        title: "Full service",
+        price: "1 180 Kč",
+        time: "105 min",
+        detail: "Klasické stříhání + úprava vousů (holení do hladka metodou Hot Towel), peeling, maska."
+      }
+    ]
+  },
+  {
+    category: "Ostatní služby",
+    description: "Doplňkové služby pro váš vzhled.",
+    items: [
+      {
+        title: "Pánské barvení vlasů",
+        price: "500 Kč",
+        time: "45 min",
+        detail: "Barvení vlasů, masáž hlavy, mytí vlasů, vysušení."
+      },
+      {
+        title: "Barvení vousů",
+        price: "300 Kč",
+        time: "30 min",
+        detail: "Samostatné barvení vousů."
       }
     ]
   }

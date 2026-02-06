@@ -78,7 +78,7 @@ const Footer = () => {
           {/* SPODNÍ LINKA */}
           <div className="pt-8 border-t border-neutral-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-neutral-500">
             <p>
-              &copy; {new Date().getFullYear()} Barber Fati. All rights reserved.
+              &copy; {new Date().getFullYear()} Barber Fati. All rights reserved. Vytvořeno <Link className="text-white/70 hover:text-blue-500" href={"https://www.zavadil.me/"}>zavadil.me</Link>
             </p>
             <div className="flex gap-6">
                 <Link href="/privacy" className="hover:text-white transition-colors underline decoration-transparent hover:decoration-white underline-offset-4">Privacy Policy</Link>
