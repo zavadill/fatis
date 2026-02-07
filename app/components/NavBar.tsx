@@ -105,9 +105,9 @@ export function Navbar() {
                 <MobileNavLink href="/kontakt" onClick={() => setIsMobileMenuOpen(false)}>Kontakt</MobileNavLink>
                 
                 <div className="pt-4">
-                  <button className="w-full px-10 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold text-lg rounded-full transition-all shadow-lg shadow-blue-500/20">
+                  <Link href={"https://barbershop-fati.reservio.com/"}className="w-full px-10 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold text-lg rounded-full transition-all shadow-lg shadow-blue-500/20">
                       Rezervovat termín
-                  </button>
+                  </Link>
                 </div>
             </nav>
         </div>
