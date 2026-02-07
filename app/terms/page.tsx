@@ -3,7 +3,10 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Obchodní podmínky | Barber Fati",
-  description: "Pravidla rezervací, storno podmínky a provozní řád.",
+  description: "Pravidla rezervací, storno podmínky, ceny a provozní řád barber shopu Barber Fati.",
+  alternates: {
+    canonical: "/terms",
+  },
 };
 
 export default function TermsPage() {

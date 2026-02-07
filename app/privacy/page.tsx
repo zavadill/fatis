@@ -2,8 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Ochrana osobních údajů | Barber Fati",
-  description: "Informace o tom, jak zpracováváme vaše osobní údaje.",
+  title: "Ochrana osobních údajů (GDPR) | Barber Fati",
+  description: "Informace o tom, jak zpracováváme vaše osobní údaje, jaká data sbíráme přes Reservio a jaká jsou vaše práva.",
+  alternates: {
+    canonical: "/privacy",
+  },
+  robots: {
+    index: true,
+    follow: true, // Chceme, aby Google věděl, že jsme transparentní
+  },
 };
 
 export default function PrivacyPage() {

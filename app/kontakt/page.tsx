@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Kontakt | Barber Fati",
-  description: "Rezervujte si termín nebo nás navštivte v OC Atrium Prostějov.",
+  title: "Kontakt a Rezervace | Barber Fati Prostějov",
+  description: "Kde nás najdete? OC Atrium Prostějov (1. patro). Telefon: +420 123 456 789. Otevírací doba a mapa. Rezervujte si termín online.",
+  alternates: {
+    canonical: "/kontakt",
+  },
+  openGraph: {
+    title: "Kontakt - Barber Fati Prostějov",
+    description: "Zastavte se na perfektní střih. Sídlíme v OC Atrium. Parkování zajištěno.",
+    url: "https://www.barberfati.cz/kontakt",
+  },
 };
 
 const openingHours = [

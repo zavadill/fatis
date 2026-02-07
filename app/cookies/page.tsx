@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cookies a Ochrana údajů | Barber Fati",
+  title: "Nastavení Cookies | Barber Fati",
+  description: "Přehled používaných cookies (Reservio, Google Maps, Analytics) a možnosti jejich nastavení.",
+  alternates: {
+    canonical: "/cookies",
+  },
 };
 
 export default function CookiesPage() {

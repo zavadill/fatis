@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Služby a Ceník | Barber Fati",
-  description: "Kompletní ceník pánských střihů, úpravy vousů a wellness procedur v Prostějově.",
+  title: "Ceník služeb | Barber Fati Prostějov",
+  description: "Kompletní ceník pánských střihů a úpravy vousů. Klasický střih, Skin Fade, Hot Towel holení a wellness procedury v OC Atrium Prostějov.",
+  alternates: {
+    canonical: "/sluzby",
+  },
+  openGraph: {
+    title: "Ceník služeb - Barber Fati",
+    description: "Podívejte se na naše ceny. Střihy, holení a kompletní péče o muže.",
+    url: "https://www.barberfati.cz/sluzby",
+  },
 };
 
 // DATA: Ceník služeb
