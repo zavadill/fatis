@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   // 2. TITULEK A POPIS
   title: {
     default: "Barber Fati | Pánské holičství Prostějov",
-    template: "%s | Barber Fati", // Na podstránkách to bude např.: "Služby | Barber Fati"
+    template: "", // Na podstránkách to bude např.: "Služby | Barber Fati"
   },
   description: "Profesionální barber shop v Prostějově (OC Atrium). Pánské střihy, úprava vousů, holení břitvou a Hot Towel. Rezervujte si termín online.",
   
