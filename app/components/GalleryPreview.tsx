@@ -9,21 +9,21 @@ import Image from "next/image"
 const galleryItems = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=2074&auto=format&fit=crop",
-    alt: "Střih a úprava vousů",
-    category: "Haircut & Beard",
+    src: "/Assets/8.webp",
+    alt: "Carlos a Fati",
+    category: "Náš tým",
     className: "md:col-span-2 md:row-span-2 h-[300px] md:h-[600px]" // Velká hlavní fotka
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=2070&auto=format&fit=crop",
-    alt: "Detail břitvy",
-    category: "Hot Towel Shave",
-    className: "md:col-span-1 md:row-span-1 h-[300px]"
+    src: "/Assets/10.webp",
+    alt: "Preciznost",
+    category: "Perfektni střih a freestyle",
+    className: "md:col-span-1 md:row-span-1 h-[280px]"
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1599351431202-6e0005a7837f?q=80&w=1961&auto=format&fit=crop",
+    src: "/Assets/5.webp",
     alt: "Styling produkt",
     category: "Styling",
     className: "md:col-span-1 md:row-span-1 h-[300px]"
@@ -110,7 +110,7 @@ const GalleryPreview = () => {
             </Link>
 
             {/* Instagram Link - velmi důležité pro Barbery */}
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2 text-neutral-400 hover:text-blue-500 transition-colors text-sm font-medium">
+            <a href="https://www.instagram.com/barbershop.fati/" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2 text-neutral-400 hover:text-blue-500 transition-colors text-sm font-medium">
                 <span className="p-2 bg-neutral-900 rounded-full group-hover:bg-blue-500/10 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.75 6.75h.75v.75h-.75z" />

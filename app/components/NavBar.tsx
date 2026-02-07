@@ -65,14 +65,14 @@ export function Navbar() {
 
             {/* CTA BUTTON (Desktop) */}
             <div className="hidden md:block">
-            <button className={`
+            <Link href={"https://barbershop-fati.reservio.com/"} className={`
                 px-6 py-2 rounded-full font-bold text-sm transition-all
                 ${isScrolled 
                 ? 'bg-blue-500 text-white hover:bg-blue-600' 
                 : 'bg-white text-black hover:bg-gray-200'}
             `}>
                 Rezervovat
-            </button>
+            </Link>
             </div>
 
             {/* MOBILE MENU TOGGLE (Hamburger) */}

@@ -3,8 +3,8 @@
 import React from "react"
 
 const openingHours = [
-  { day: "Pondělí - Pátek", time: "9:00 – 18:00" },
-  { day: "Sobota", time: "9:00 – 14:00" },
+  { day: "Pondělí - Pátek", time: "9:00 – 19:00" },
+  { day: "Sobota", time: "9:00 – 17:00" },
   { day: "Neděle", time: "Zavřeno" },
 ]
 
@@ -50,14 +50,14 @@ const ContactPreview = () => {
                         </div>
                         <div>
                             <h3 className="text-white font-bold text-lg">OC Atrium</h3>
-                            <p className="text-neutral-400">Hlavní náměstí 123, 796 01 Prostějov</p>
-                            <p className="text-blue-500 text-sm mt-1 font-medium">1. patro, vedle kavárny</p>
+                            <p className="text-neutral-400">Hlaváčkovo nám. 217/1, 796 01 Prostějov 1</p>
+                            <p className="text-blue-500 text-sm mt-1 font-medium">vedle kavárny</p>
                         </div>
                     </div>
 
                     {/* TELEFON & EMAIL */}
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <a href="tel:+420123456789" className="flex-1 flex items-center gap-4 p-4 rounded-2xl bg-neutral-900/30 border border-neutral-800 hover:border-blue-500 hover:bg-neutral-800 transition-all group">
+                        <a href="tel:+420604240756" className="flex-1 flex items-center gap-4 p-4 rounded-2xl bg-neutral-900/30 border border-neutral-800 hover:border-blue-500 hover:bg-neutral-800 transition-all group">
                             <div className="p-3 bg-blue-600/20 text-blue-500 rounded-full group-hover:bg-blue-600 group-hover:text-white transition-colors">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -65,7 +65,7 @@ const ContactPreview = () => {
                             </div>
                             <div>
                                 <p className="text-xs text-neutral-500 uppercase tracking-wider font-bold">Zavolejte nám</p>
-                                <p className="text-white font-bold">+420 123 456 789</p>
+                                <p className="text-white font-bold">+420 604 240 756</p>
                             </div>
                         </a>
                         
@@ -77,7 +77,7 @@ const ContactPreview = () => {
                             </div>
                             <div>
                                 <p className="text-xs text-neutral-500 uppercase tracking-wider font-bold">Napište nám</p>
-                                <p className="text-white font-bold">info@barberfati.cz</p>
+                                <p className="text-white font-bold">barbershop-fati@seznam.cz</p>
                             </div>
                         </a>
                     </div>
@@ -98,7 +98,7 @@ const ContactPreview = () => {
                     </h3>
                     <ul className="space-y-3 text-sm">
                         {openingHours.map((item, index) => (
-                            <li key={index} className="flex justify-between border-b border-blue-500/30 pb-2 last:border-0 last:pb-0">
+                            <li key={index} className="flex justify-between border-b border-blue-500/30 pb-2 last:border-0 last:pb-0 gap-5">
                                 <span className="opacity-80">{item.day}</span>
                                 <span className="font-bold">{item.time}</span>
                             </li>
@@ -111,7 +111,7 @@ const ContactPreview = () => {
                     
                     {/* Tmavý filtr na mapu - CSS trik pro dark mode mapu bez API klíče */}
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.654637736416!2d17.109678315687555!3d49.47055597935234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712f90768078f41%3A0xc3c683833446b5e1!2sOC%20Zlat%C3%A1%20Br%C3%A1na!5e0!3m2!1scs!2scz!4v1677685412345!5m2!1scs!2scz" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d648.157201647789!2d17.11307846964876!3d49.47262799821389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471257665c8a7a8f%3A0x59d66c04aa84b7e3!2sBarbershop%20Fati!5e0!3m2!1scs!2scz!4v1770491523024!5m2!1scs!2scz"
                         width="100%" 
                         height="100%" 
                         style={{ border: 0, filter: 'grayscale(1) invert(1) contrast(1.2) opacity(0.8)' }} 
