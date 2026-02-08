@@ -12,6 +12,33 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* app/globals.css - přidej na úplný konec souboru */
+
+/* === SCROLLBAR PRO FIREFOX === */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #0a0a0a; /* Modrá posuvník, Tmavé pozadí */
+}
+
+/* === SCROLLBAR PRO CHROME, EDGE, SAFARI, OPERA === */
+body::-webkit-scrollbar {
+  width: 12px;               /* Šířka scrollbaru */
+}
+
+body::-webkit-scrollbar-track {
+  background: #0a0a0a;       /* Barva pozadí (neutral-950) */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #262626; /* Barva posuvníku v klidu (neutral-800) */
+  border-radius: 6px;        /* Kulaté rohy */
+  border: 3px solid #0a0a0a; /* Odsazení, aby vypadal "plovoucí" */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #2563eb; /* Barva při najetí myší (blue-600) */
+}
+
 
 body {
   background: var(--background);

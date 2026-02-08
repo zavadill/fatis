@@ -59,55 +59,6 @@ const HeroScene = () => {
         </div>
       </div>
 
-      {/* REZERVAČNÍ KARTA – DARK GLASSMORPHISM */}
-      {/* px-4: Odsazení od krajů mobilu. -mt-12: Menší překryv na mobilu, -mt-32 na desktopu */}
-      <div className="relative z-20 -mt-12 lg:-mt-32 pb-24 px-4 sm:px-6">
-        <div className="max-w-5xl mx-auto">
-          
-          {/* Karta: p-5 na mobilu (šetří místo), p-10 na desktopu */}
-          <div className="bg-neutral-900/80 backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-neutral-800 shadow-2xl shadow-black/50 p-5 sm:p-10 overflow-hidden relative">
-            
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-blue-500/50 to-transparent blur-sm" />
-
-            {/* HLAVIČKA KARTY - Flex wrap pro malé displeje */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-4 mb-6 sm:mb-8">
-              <div className="flex items-center gap-3">
-                <span className="relative flex h-3 w-3">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
-                </span>
-                <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
-                  Rezervace termínu
-                </h3>
-              </div>
-              <p className="text-xs sm:text-sm text-neutral-500 font-medium">
-                Online rezervace • Reservio
-              </p>
-            </div>
-
-            {/* IFRAME KONTEJNER */}
-            <div className="w-full overflow-hidden rounded-xl sm:rounded-2xl border border-neutral-800 bg-white/5 relative group">
-              
-              <div className="absolute inset-0 bg-neutral-900 flex items-center justify-center -z-10">
-                 <span className="text-neutral-700 text-sm animate-pulse">Načítám kalendář...</span>
-              </div>
-
-              {/* Iframe výška: Na mobilu 600px, na desktopu 700px */}
-              <iframe
-                src="https://barbershop-fati.reservio.com/"
-                className="w-full h-[600px] md:h-[700px] bg-white filter lg:grayscale-[0.1] lg:hover:grayscale-0 transition-all duration-500"
-                frameBorder="0"
-                title="Barber Fati Rezervace"
-              />
-            </div>
-            
-             <p className="text-center text-neutral-600 text-[10px] sm:text-xs mt-4">
-                Powered by Reservio • Těšíme se na vaši návštěvu
-             </p>
-
-          </div>
-        </div>
-      </div>
     </section>
   )
 }
